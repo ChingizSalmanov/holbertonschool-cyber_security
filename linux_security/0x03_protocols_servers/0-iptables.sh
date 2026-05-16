@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo iptables -L --line-numbers -v
+sudo iptables -t filter -L --line-numbers -v
