@@ -1,2 +1,2 @@
 #!/bin/bash
-sshd -T | grep -Ev "^#|^$"
+sshd -T | grep -Ev /etc/ssh/sshd_config
