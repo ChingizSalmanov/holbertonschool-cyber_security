@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo iptables -t filter -L --line-numbers -v
+iptables -L DOCKER-USER --line-numbers -v
