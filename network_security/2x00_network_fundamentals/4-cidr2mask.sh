@@ -1,2 +1,2 @@
 #!/bin/bash
-python3 -c "import socket,struct; print(socket.inet_ntoa(struct.pack('>I', (0xffffffff << (32-$1)) & 0xffffffff)))"
+mask=$((0xFFFFFFFF << (32 - $1) & 0xFFFFFFFF)); printf "%d.%d.%d.%d\n" $(($mask >> 24)) $((($mask >> 16) & 255)) $((($mask >> 8) & 255)) $(($mask & 255))
