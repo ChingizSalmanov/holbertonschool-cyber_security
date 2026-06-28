@@ -1,2 +1,1 @@
-#!/bin/bash
-curl -X POST "$2" -H "HOST: $1" -d "$3"
+curl -s -H "Host: hbtn.io" http://10.42.16.17/
